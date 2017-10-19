@@ -57,13 +57,16 @@ Author URI: http://www.Xpeedstudio.com
     }
     .main_service_content img{
         width:100%;
+        padding-left: 20px;
     }
     .main_service_content .single_service {
         margin-top: 5%;
         padding: 0% 2%;
+        padding-left: 20px;
     }
     .single_service.single_service_left_text {
         margin-left: 0%;
+        padding-left: 20px;
     }
 
     .main_blog_area .single_blog_menu ul {
