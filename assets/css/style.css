@@ -238,7 +238,7 @@ textarea.form-control:focus:not([readonly]) {
     top: 0;
 }
 .cd-header.small{
-    background: #333;
+    background: #fff;
 }
 nav ul li {
     transition: background-color .3s;
