@@ -1,0 +1,486 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Quattrocento);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+
+/*background-color: #f0eceb;*/
+/* ==========================================================================
+Global Styles
+========================================================================== */
+html{
+    height: 100%;
+    width: 100%;
+}
+body {
+    height: 100%;
+    font-family: Oswald, sans-serif;
+    overflow-x: hidden;
+    margin: 0px;
+}
+img {
+    image-orientation: from-image;
+}
+hr {
+    border-color: black;
+}
+a{
+    color: inherit;
+    transition: all 0.2s ease;
+}
+a:hover{
+    color:inherit;
+}
+.cursor-default{
+    cursor: default;
+}
+.transparent{
+    color: transparent;
+    background-color: transparent;
+    border-color: transparent;
+    outline: transparent;
+}
+.no-margin{
+	margin: 0px !important;
+}
+.no-padding{
+	padding: 0px !important;
+}
+.top-margin-md{
+    margin-top: 1em !important;
+}
+.bot-margin-md{
+    margin-bottom: 1em !important;
+}
+.top-margin-sm{
+    margin-top: 0.5em !important;
+}
+.bot-margin-sm{
+    margin-bottom: 0.5em !important;
+}
+.margin-md{
+    margin: 1em !important;
+}
+.margin-sm{
+    margin: 0.5em !important;
+}
+.margin-xs{
+    margin: 0.25em !important;
+}
+/* ==========================================================================
+Extra
+========================================================================== */
+#fade-to-img{
+    background: #f0eceb; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#f0eceb, #fbfcfe); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#f0eceb, #fbfcfe); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#f0eceb, #fbfcfe); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#f0eceb, #fbfcfe); /* Standard syntax */
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+/* ==========================================================================
+Navigation
+========================================================================== */
+.nav-container {
+    transition: all 0.75s ease;
+}
+.navbar{
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    transition: all 0.5s ease;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.nav-logo {
+    position: relative;
+    height: 65px;
+    width: 248px;
+    margin-top: 0.25px;
+    margin-bottom: 0.25px;
+    transition: all 0.75s ease;.
+}
+.mobile-logo{
+    height: 32.5px;
+    width: 124px;
+    margin-top: 0.5em;
+}
+.nav-menu {
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+    transition: all 0.75s ease;.
+}
+.navbar-default .navbar-nav > li > a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    font-size: 0.9em;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: white;
+    transform: scale(1.2);
+}
+	
+/* ==========================================================================
+Wrapper
+========================================================================== */
+.banner{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.overlay{
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+.overlay-wrapper{
+    position: relative;
+    height: 77vh;
+    display: block;
+    overflow: hidden;
+}
+.overlay-text{
+    position: absolute;
+    z-index: 2;
+    bottom: 5px;
+    left: 15px;
+    right: 35px;
+    color: #fff;
+}
+
+/* ==========================================================================
+Details
+========================================================================== */
+#details{
+	background-color: #F0ECEB;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+}
+#mountain-title{
+	font-family: 'Oswald';
+	font-size: 2em;
+	font-weight: 800;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	color: #283018;
+}
+#mountain-loc{
+	font-family: 'Oswald';
+	font-size: 1.25em;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+	line-height: 2em;
+	text-transform: uppercase;
+	color: #aa863a;
+}
+.mountain-logo{
+	font-size: 5em;
+	color: #283018;
+}
+.details-header{
+	font-family: 'Oswald';
+	font-size: 1.2em;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #aa863a;
+}
+.details-info{
+	font-family: 'Oswald';
+	font-size: 1.2em;
+	font-weight: 500;
+	line-height: 2em;
+	letter-spacing: 0.1em;
+	color: #283018;
+	/*text-transform: lowercase;*/
+}
+
+/* ==========================================================================
+About
+========================================================================== */
+#about{
+	background-color: #F0ECEB;
+	padding-top: 2vh;
+	padding-bottom: 8vh;
+}
+.about-header{
+	color: #283018;
+	font-family: 'Oswald';
+	font-size: 2em;
+	letter-spacing: 0.1em;
+	line-height: 4em;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+.about-sub-header{
+    color: #283018;
+    font-family: 'Oswald';
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    line-height: 4em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.about-desc{
+	font-family: 'Roboto';
+	font-weight: 300;
+	font-size: 1em;
+}
+.about-icon{
+	margin-top: 3vh;
+}
+.about-img{
+	border: solid 0.5em rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* ==========================================================================
+References
+========================================================================== */
+#itinerary{
+    background-color: #f0eceb;
+    padding-bottom: 5vh;
+}
+.itinerary-icon{
+    font-size: 4em;
+    color: #283018;
+}
+.itinerary-header{
+    font-family: 'Oswald';
+    font-size: 1.2em;
+    font-weight: 500;
+    line-height: 3em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #aa863a;
+}
+.itinerary-table > tbody > tr > td,
+.itinerary-table > thead > tr > th{
+    font-family: 'Roboto';
+    font-size: 0.9em;
+}
+.itinerary-table > thead > tr > th{
+    letter-spacing: 0.05em;
+}
+.note-desc{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
+/* ==========================================================================
+References
+========================================================================== */
+#references{
+/*  background-image: url(assets/images/about-bg-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    min-height: 80%;*/
+    background-color: #f0eceb;
+    padding-bottom: 10vh;
+}
+.references-header{
+    color: #283018;
+    font-family: 'Oswald';
+    font-size: 2em;
+    letter-spacing: 0.1em;
+    line-height: 4em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.references-list{
+    padding-left: 1em;
+}
+.references-span{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 1em;
+}
+
+/* ==========================================================================
+Footer Style
+========================================================================== */
+footer{
+    background-color: #283018;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.footer-title{
+    color: white;
+    font-family: 'Raleway';
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+}
+
+.footer-sub-text{
+    font-size: 0.75em;
+    margin-top: 20px;
+    color: white;
+    font-family: 'Roboto';
+}
+
+.footer-logo{
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    color: white;
+}
+
+.footer-address{
+    margin-top: 0.5em;
+}
+
+.footer-mobile{
+    margin-top: 0.5em;
+}
+
+.footer-email{
+    margin-top: 0.5em;
+}
+.container-social{
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
+}
+ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left:0 !important;
+    padding: 0;
+}
+ul.social-network li {
+    display: inline;
+    margin: 0 5px;
+}
+.social-network a.icoRss:hover {
+    background-color: #F56505;
+}
+.social-network a.icoFacebook:hover {
+    background-color:#3B5998;
+}
+.social-network a.icoTwitter:hover {
+    background-color:#33ccff;
+}
+.social-network a.icoGoogle:hover {
+    background-color:#BD3518;
+}
+.social-network a.icoVimeo:hover {
+    background-color:#0590B8;
+}
+.social-network a.icoLinkedin:hover {
+    background-color:#007bb7;
+}
+.social-network a.icoInstagram:hover {
+    background-color: orangered;
+}
+.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i, .social-network a.icoInstagram:hover i {
+    color:#fff;
+}
+a.socialIcon:hover, .socialHoverClass {
+    color:#44BCDD;
+}
+.social-circle li a {
+    display:inline-block;
+    position:relative;
+    margin:0 auto 0 auto;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    border-radius:50%;
+    text-align:center;
+    width: 50px;
+    height: 50px;
+    font-size:20px;
+}
+.social-circle li i {
+    margin:0;
+    line-height:50px;
+    text-align: center;
+}
+.social-circle li a:hover i, .triggeredHover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.social-circle i {
+    color: black;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+}
+.white-social-circle i {
+    color: white;
+}
+
+
+@media only screen and (max-width : 480px) {
+    .navbar{
+        background-color: #283018;
+    }
+
+    .navbar-default .navbar-nav > li > a{
+        font-size: 0.75em;
+    }
+
+    .nav-menu{
+        margin-top: 0.375em;
+        margin-bottom: 0.375em;
+    }
+    
+    .mobile-logo{
+
+        margin-left: 1em;
+    }
+
+    .navbar{
+        padding-top: 0em;
+        padding-bottom: 0em;
+    }
+
+    .mountain-logo{
+        font-size: 3.5em;
+    }
+    .details-header{
+        font-size: 1em;
+    }
+    .details-info{
+        font-size: 0.9em;
+    }
+
+    #mountain-title, .about-header, .references-header{
+        font-size: 1.5em;
+    }
+
+    #mountain-loc{
+        font-size: 1em;
+    }
+    .about-sub-header{
+        font-size: 1em;
+    }
+    .references-span, .about-desc{
+        font-size: 0.9em;
+    }
+}
